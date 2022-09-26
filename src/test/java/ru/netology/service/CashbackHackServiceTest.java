@@ -22,7 +22,7 @@ public class CashbackHackServiceTest {
     @Test
     public void amountMore1000() {
 
-        int actual = 0;
+        int actual = 1_000;
         int expected = service.remain(5_000);
 
         assertEquals(actual, expected);
@@ -31,7 +31,7 @@ public class CashbackHackServiceTest {
     @Test
     public void amountEquality1000() {
 
-        int actual = 0;
+        int actual = 1_000;
         int expected = service.remain(1_000);
 
         assertEquals(actual, expected);
